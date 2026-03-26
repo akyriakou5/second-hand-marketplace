@@ -264,8 +264,7 @@
                 // Use product images or a placeholder image if no image exists
                 const imgs = images.length ? images : [placeholder("No Image")];
 
-                // Show full product details on the page
-                const mainImg = document.querySelector("#mainImg");
+
 
                 mount.innerHTML = `
                     <div class="card">
@@ -340,6 +339,8 @@
                     </div>
                      `;
 
+                // Show full product details on the page
+                const mainImg = document.querySelector("#mainImg");
                 // Add click event to each thumbnail
                 document.querySelectorAll("#thumbs .thumb").forEach(t => {
                     t.addEventListener("click", () => {
