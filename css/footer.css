@@ -1,0 +1,138 @@
+/* FOOTER*/
+.site-footer{
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    background: rgba(15,23,42,.85);
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* GRID */
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 22px;
+    padding: 28px 0;
+}
+
+/* BRAND */
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* Logo image */
+.footer-logo{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+    border-radius:8px;
+}
+
+.footer-title{
+    font-weight:900;
+    letter-spacing:.3px;
+    transition: color 0.3s ease;
+}
+
+/* TEXT */
+.footer-heading{
+    margin:0 0 12px;
+    font-size:14px;
+    color:var(--text);
+    transition: color 0.3s ease;
+}
+
+.footer-text{
+    margin:0;
+    color:var(--muted);
+    line-height:1.6;
+    font-size:14px;
+    transition: color 0.3s ease;
+}
+
+/* LINKS */
+.footer-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:grid;
+    gap:10px;
+}
+
+.footer-link{
+    color:var(--text);
+    opacity:.9;
+    text-decoration:none;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+
+.footer-link:hover{
+    color:var(--accent2);
+    opacity:1;
+}
+
+/* BOTTOM */
+.footer-bottom{
+    padding:16px 0 24px;
+    border-top:1px solid rgba(255,255,255,.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    transition: border-color 0.3s ease;
+}
+
+.footer-muted{
+    color:var(--muted);
+    font-size:13px;
+    transition: color 0.3s ease;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 920px){
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+        text-align:center;
+    }
+
+    .footer-brand{
+        justify-content:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+/* LIGHT MODE - FOOTER */
+body.light-mode .site-footer{
+    border-top: 1px solid #e2e8f0;
+    background: #ffffff;
+    backdrop-filter: none;
+}
+/* Footer titles and links */
+body.light-mode .footer-heading,
+body.light-mode .footer-title,
+body.light-mode .footer-link{
+    color: #0f172a;
+}
+
+/* Footer normal text */
+body.light-mode .footer-text,
+body.light-mode .footer-muted{
+    color: #64748b;
+}
+
+body.light-mode .footer-link:hover{
+    color: #2563eb;
+}
+
+body.light-mode .footer-bottom{
+    border-top: 1px solid #e2e8f0;
+}

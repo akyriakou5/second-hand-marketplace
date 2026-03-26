@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- Makes the page responsive on all devices -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/logo4.png">
+    <!-- Title shown in the browser tab -->
+    <title>Second-Hand Market | Seller Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/seller.js" defer></script>
+</head>
+<body data-page="dashboard">
+<div id="navbar"></div>
+
+<main class="container section">
+    <div class="card">
+        <h2 style="margin:0 0 8px;">Seller Dashboard</h2>
+        <p class="muted" style="margin:0 0 14px;">Create a new product listing</p>
+
+        <!-- Form to create a new product -->
+        <form id="createProductForm" class="form" novalidate>
+            <!-- Split layout for title and category -->
+            <div class="split">
+                <div class="form-row">
+                    <!-- Label -->
+                    <label for="title">Title *</label>
+                    <!-- Input field -->
+                    <input class="input" id="title" name="title" placeholder="e.g., Nike running shoes" required />
+                    <!-- Error message -->
+                    <div class="error" data-error="title"></div>
+                </div>
+
+                <!-- Product category dropdown -->
+                <div class="form-row">
+                    <label for="category">Category *</label>
+                    <!-- Select dropdown -->
+                    <select class="select" id="category" name="category" required></select>
+                    <!-- Error message -->
+                    <div class="error" data-error="category"></div>
+                </div>
+            </div>
+
+            <!-- Product description -->
+            <div class="form-row">
+                <label for="description">Description *</label>
+                <!-- Text area -->
+                <textarea class="textarea" id="description" name="description" placeholder="Write details about the item..." required></textarea>
+                <!-- Error message -->
+                <div class="error" data-error="description"></div>
+            </div>
+
+            <!-- Product price -->
+                <div class="form-row">
+                    <label for="price">Price (€) *</label>
+                    <input class="input" id="price" name="price" inputmode="decimal" placeholder="e.g., €25" required />
+                    <!-- Error message -->
+                    <div class="error" data-error="price"></div>
+                </div>
+
+            <!-- Image upload -->
+            <div class="form-row">
+                <label for="images">Images (max 3, jpg/png/webp)</label>
+                <!-- File input -->
+                <input class="input" id="images" name="images" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" multiple />
+                <!-- Error message -->
+                <div class="error" data-error="images"></div>
+                <!-- Preview area for uploaded images -->
+                <div id="imagePreviews" class="previews" style="margin-top:10px;"></div>
+            </div>
+
+            <!-- Area for form messages -->
+            <div id="formMsg" class="small"></div>
+
+            <!-- Buttons section -->
+            <div class="inline">
+                <!-- Button to submit the product -->
+                <button class="btn primary" id="submitProductBtn" type="submit">Create Product</button>
+                <!-- Button to view seller products -->
+                <a class="btn" id="viewMyProductsBtn" href="#">View My Products</a>
+            </div>
+
+
+            <!-- Message shown after successful creation -->
+            <div id="afterCreate" class="notice" style="display:none; margin-top: 12px;">
+                <!-- Success message -->
+                <div class="muted small">Your product is saved. You can now see it in the products page.</div>
+                <!-- Link to products page -->
+                <div class="inline" style="margin-top:10px;">
+                    <a class="btn primary" href="products.html">Go to Products</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Section for seller products -->
+    <section class="section">
+        <div class="card">
+            <h3 style="margin:0 0 8px;">My Products</h3>
+            <p class="muted" style="margin:0 0 12px;">Here you can view and manage all the products you have posted.</p>
+            <!-- Container where seller products will be displayed -->
+            <div id="myProducts"></div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- Makes the page responsive on all devices -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/logo4.png">
+    <!-- Title shown in the browser tab -->
+    <title>Second-Hand Market | Products</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/products.js" defer></script>
+</head>
+<body>
+<div id="navbar"></div>
+
+<main class="container section">
+    <!-- Card container for products page -->
+    <div class="card">
+        <h2 style="margin:0 0 8px;">Products</h2>
+        <p class="muted" style="margin:0;"></p>
+
+        <!-- Toolbar with filters and search -->
+        <div class="toolbar">
+            <div class="controls">
+                <!-- Dropdown to filter products by category -->
+                <select id="categoryFilter" class="select" aria-label="Category filter"></select>
+                <input id="searchInput" class="input" placeholder="Search title or description…" />
+            </div>
+            <!-- Shows number of results -->
+            <div class="badge" id="resultsCount">0 result(s)</div>
+        </div>
+
+        <!-- Grid container where products will be displayed -->
+        <div id="productsGrid" class="grid-products"></div>
+    </div>
+
+
+</main>
+<!--Loaded footer-->
+<div id="footerMount"></div>
+
+</body>
+</html>

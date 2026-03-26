@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- Makes the page responsive on all devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" href="assets/logo4.png">
+  <!-- Title shown in the browser tab -->
+  <title>Second-Hand Market | Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</head>
+<body>
+<div id="navbar"></div>
+
+<main class="container section">
+  <!-- Card container for the registration form -->
+  <div class="card" style="max-width:640px;margin:0 auto;">
+    <h2 style="margin:0 0 8px;">Seller Registration</h2>
+    <p class="muted" style="margin:0 0 14px;">Create an account to post products.</p>
+
+    <!-- Registration form -->
+    <form id="registerForm" class="form" novalidate>
+      <!-- Username input field -->
+      <div class="form-row">
+        <!-- Username input box -->
+        <label for="username">Username *</label>
+        <input
+                class="input"
+                id="username"
+                name="username"
+                placeholder="Enter username"
+                required
+        />
+        <!-- Error message for username -->
+        <div class="error" data-error="username"></div>
+      </div>
+
+      <!-- Email input field -->
+      <div class="form-row">
+        <!-- Label for email -->
+        <label for="email">Email *</label>
+        <input
+                class="input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+        />
+
+        <!-- Error message for email -->
+        <div class="error" data-error="email"></div>
+      </div>
+
+      <!-- Password input field -->
+      <div class="form-row">
+        <!-- Label for password -->
+        <label for="password">Password *</label>
+
+        <!-- Password input box -->
+        <input
+                class="input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="••••••••"
+                required
+        />
+        <!-- Error message for password -->
+        <div class="error" data-error="password"></div>
+        <!-- Password rules description -->
+        <div class="small muted" style="margin-top:4px;">
+          Use at least 8 characters, one uppercase letter, one lowercase letter, and one number.
+        </div>
+      </div>
+
+<!--      Confirm Password-->
+      <div class="form-row">
+        <label for="confirmPassword">Confirm Password *</label>
+        <input
+                class="input"
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                placeholder="••••••••"
+                required
+        />
+        <div class="error" data-error="confirmPassword"></div>
+      </div>
+
+
+      <div id="formMsg" class="small"></div>
+
+      <!-- Buttons section -->
+      <div class="inline">
+        <!-- Create account button -->
+        <button class="btn primary" type="submit">Create Account</button>
+        <!-- Link to login page -->
+        <a class="btn" href="login.html">Already have an account?</a>
+      </div>
+    </form>
+  </div>
+</main>
+</body>
+</html>

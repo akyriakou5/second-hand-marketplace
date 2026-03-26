@@ -1,0 +1,50 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+<!--            Footer column with logo and short description-->
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="assets/logo4.png" alt="Logo" class="footer-logo">
+                    <span class="footer-title">Second-Hand Market</span>
+                </div>
+                <p class="footer-text">
+                    A simple marketplace for buying and selling second-hand products.
+                </p>
+            </div>
+
+<!--            Footer column with contact information-->
+            <div class="footer-col">
+                <h4 class="footer-heading">Support</h4>
+                <p class="footer-text">
+                    Email: <a class="footer-link" href="mailto:akyriakou5@uclan.ac.uk">akyriakou5@uclan.ac.uk</a>
+                </p>
+            </div>
+
+<!--            Footer column with legal links-->
+            <div class="footer-col">
+                <h4 class="footer-heading">Legal</h4>
+                <ul class="footer-list">
+                    <li><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a class="footer-link" href="terms-conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+
+<!--        Bottom part of footer-->
+        <div class="footer-bottom">
+            <span class="footer-muted">© <span id="footerYear"></span>2026 Second-Hand Market. All rights reserved.</span>
+        </div>
+    </div>
+
+    <script>
+        // Get the current year and show it in the footer
+        (function () {
+            var y = document.getElementById("footerYear");
+            if (y) y.textContent = new Date().getFullYear();
+        })();
+    </script>
+</footer>
+<!--Reference-->
+<!--Stackoverflow.com. Available at: https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript (Accessed: March 4, 2026).
+
+-->
