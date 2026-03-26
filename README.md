@@ -87,15 +87,19 @@ Before running the project, the following software must be installed:
 
 Follow these steps to run the project locally:
  
-1. Install XAMPP : https://www.apachefriends.org/
-2. Start Apache and MySQL from the XAMPP Control Panel
+1. Install XAMPP (8.2.12) : https://www.apachefriends.org/
+2. Open the XAMPP Control Panel and start:
+   - Apache
+   - MySQL
 3. Copy the project folder into: 
 c:\xampp\htdocs\
-4. Open phpMyAdmin from the XAMPP Control Panel
-5. Create a new database named:
-secondhand_products
-6. Import the provided database file: secondhand_products.sql
-7. Open a browser and go to:
+4. Open the XAMPP Control Panel.
+5. Click on the "Admin" button next to MySQL to open phpMyAdmin in your browser.
+6. Create a new database named:
+   secondhand_products
+7. Import the provided database file:
+   secondhand_products.sql
+8. Open your browser and go to:
    http://localhost/DoubleProject/
 
 The application should now run locally.
@@ -141,9 +145,9 @@ You can use this account to log in as a seller and access the dashboard
 <!-- CONTACT -->
 ## Contact
 
-Antreas Kyriakou - akyriakou5@uclan.ac.uk - [GitHub Account](https://github.com/your_username)
+Antreas Kyriakou - akyriakou5@uclan.ac.uk - [GitHub Account](https://github.com/akyriakou5/second-hand-marketplace)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/akyriakou5/second-hand-marketplace](https://github.com/akyriakou5/second-hand-marketplace)
 
 Live Website: https://antreas.cy
 
