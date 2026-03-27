@@ -91,7 +91,7 @@ Follow these steps to run the project locally:
 2. Open the XAMPP Control Panel and start:
    - Apache
    - MySQL
-3. Copy the project folder into: 
+3. Copy the project folder (DoubleProject) into: 
 c:\xampp\htdocs\
 4. Open the XAMPP Control Panel.
 5. Click on the "Admin" button next to MySQL to open phpMyAdmin in your browser.
@@ -103,6 +103,33 @@ c:\xampp\htdocs\
    http://localhost/DoubleProject/
 
 The application should now run locally.
+
+
+
+### Important Folder Setup
+
+If you download the project as a ZIP file from GitHub, the folder name will usually be:
+
+DoubleProject-main
+
+You must rename this folder to:
+
+DoubleProject
+
+Make sure that the project structure is correct:
+
+✔ Correct:
+C:\xampp\htdocs\DoubleProject\ (project files here)
+
+❌ Incorrect:
+C:\xampp\htdocs\DoubleProject\DoubleProject\ (nested folder)
+
+The project files (index.php, assets, etc.) must be directly inside the "DoubleProject" folder.
+
+Otherwise, the application may not run correctly.
+
+After that, open your browser and go to:
+http://localhost/DoubleProject/
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
