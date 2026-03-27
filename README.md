@@ -110,7 +110,7 @@ The application should now run locally.
 
 If you download the project as a ZIP file from GitHub, the folder name will usually be:
 
-DoubleProject-main
+second-hand-marketplace
 
 You must rename this folder to:
 
@@ -122,7 +122,7 @@ Make sure that the project structure is correct:
 C:\xampp\htdocs\DoubleProject\ (project files here)
 
 ❌ Incorrect:
-C:\xampp\htdocs\DoubleProject\DoubleProject\ (nested folder)
+C:\xampp\htdocs\second-hand-marketplace\DoubleProject\ (nested folder)
 
 The project files (index.php, assets, etc.) must be directly inside the "DoubleProject" folder.
 
@@ -172,7 +172,7 @@ You can use this account to log in as a seller and access the dashboard
 <!-- CONTACT -->
 ## Contact
 
-Antreas Kyriakou - akyriakou5@uclan.ac.uk - [GitHub Account](https://github.com/akyriakou5/second-hand-marketplace)
+Antreas Kyriakou - akyriakou5@uclan.ac.uk - [GitHub Account](https://github.com/akyriakou5/DoubleProject)
 
 Project Link: [https://github.com/akyriakou5/second-hand-marketplace](https://github.com/akyriakou5/second-hand-marketplace)
 
