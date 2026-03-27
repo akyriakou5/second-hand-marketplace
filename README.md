@@ -106,6 +106,7 @@ The application should now run locally.
 
 
 
+
 ### Important Folder Setup
 
 If you download the project as a ZIP file from GitHub, the folder name will usually be:
