@@ -104,7 +104,7 @@ c:\xampp\htdocs\
 
 The application should now run locally.
 
-
+ 
 
 ### Important Folder Setup
 
